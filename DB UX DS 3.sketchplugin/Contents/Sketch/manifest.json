@@ -1,0 +1,19 @@
+{
+    "name" : "DB UX DS 3",
+    "identifier" : "dbuxds",
+    "version" : "1.0.1",
+    "description" : "Icon Setup for DB UX DS 3.0 (alpha)",
+    "authorEmail" : "lea.perchermeier@deutschebahn.com",
+    "author" : "Lea Perchermeier",
+    "icon": "icon.png",
+
+    "commands" : [
+    {
+      "script" : "SetupIconSizes.js",
+      "handler" : "onRun",
+      "shortcut" : "control option command i",
+      "name" : "Setup Icon Sizes (alpha)",
+      "identifier" : "dbuxds.pagenames"
+    }
+  ],
+}
