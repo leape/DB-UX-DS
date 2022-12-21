@@ -16,15 +16,16 @@ var onRun = function(context) {
 		doc.showMessage("📍 Please select one or more 24dp icon symbols");
 	}else{
 
-		//initial vertical alignment
-		initialAlignment(selection);
+		//check icon sizes and layer type
+		var check = initialCheck(selection);
+		if(check){
 
-		//loop through the selected layers
-		for(var i = 0; i < selection.count(); i++){
-			var allIcons = [];
+			//initial vertical alignment
+			initialAlignment(selection);
 
-			//checks to see if the layer is an artboard
-			if(selection[i].class() == "MSSymbolMaster"){
+			//loop through the selected layers
+			for(var i = 0; i < selection.count(); i++){
+				var allIcons = [];
 
 				//reference the selection
 				var selectedIcon = selection[i];
@@ -63,10 +64,30 @@ var onRun = function(context) {
 
 				doc.showMessage("All icon sizes were created ⭐️");
 
-			}else{
-				doc.showMessage("📍 Please select one or more 24dp icon symbols");
 			}
+		}else{
+			doc.showMessage("📍 Please select one or more 24dp icon symbols");
 		}
+
+	}
+}
+
+function initialCheck(selection) {
+	var check = true;
+
+	for(i=0; i < selection.length; i++) {
+		if (selection[i].class() == "MSSymbolMaster" && selection[i].frame().width() == 24 && selection[i].frame().height() == 24){
+			check = true;
+		}
+		else { 
+			check = false; 
+		}
+	}
+	if(check == true) {
+		return true;
+	}
+	else {
+		return false;
 	}
 }
 
