@@ -17,8 +17,7 @@ var onRun = function(context) {
 	}else{
 
 		//check icon sizes and layer type
-		var check = initialCheck(selection);
-		if(check){
+		if(initialCheck(selection)){
 
 			//initial vertical alignment
 			initialAlignment(selection);
@@ -74,21 +73,12 @@ var onRun = function(context) {
 
 function initialCheck(selection) {
 	var check = true;
-
 	for(i=0; i < selection.length; i++) {
-		if (selection[i].class() == "MSSymbolMaster" && selection[i].frame().width() == 24 && selection[i].frame().height() == 24){
-			check = true;
-		}
-		else { 
-			check = false; 
+		if (selection[i].class() != "MSSymbolMaster" || selection[i].frame().width() != 24 || selection[i].frame().height() != 24){
+			check = false;
 		}
 	}
-	if(check == true) {
-		return true;
-	}
-	else {
-		return false;
-	}
+	return check;
 }
 
 function initialAlignment(selection) {

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <item>
-      <title>Version 1.1.0</title>
+      <title>Version 1.1.1</title>
       <description>
-        check if selected layers are 24dp symbols
+        tiny bugfix
       </description>
-      <enclosure url="https://github.com/leape/DB-UX-Design-System--Icons/releases/download/1.1.0/DB-UX-DS-3.sketchplugin.zip" sparkle:version="1.1.0"/>
+      <enclosure url="https://github.com/leape/DB-UX-Design-System--Icons/releases/download/1.1.1/DB-UX-DS-3.sketchplugin.zip" sparkle:version="1.1.1"/>
     </item>
   </channel>
 </rss>
