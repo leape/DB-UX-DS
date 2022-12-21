@@ -2,7 +2,7 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
     <item>
-      <enclosure url="https://github.com/leape/DB-UX-Design-System--Icons/releases/download/1.0.5/DB-UX-DS-3.sketchplugin.zip" sparkle:version="1.0.5"/>
+      <enclosure url="https://github.com/leape/DB-UX-Design-System--Icons/releases/download/1.0.6/DB-UX-DS-3.sketchplugin.zip" sparkle:version="1.0.6"/>
     </item>
   </channel>
 </rss>
