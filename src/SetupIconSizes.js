@@ -13,7 +13,7 @@ var onRun = function(context) {
 
 	//make sure something is selected
 	if(selection.count() == 0){
-		doc.showMessage("Please select the 24px Icon.");
+		doc.showMessage("Please select one or more 24dp icon symbols.");
 	}else{
 
 		//initial vertical alignment
@@ -64,7 +64,7 @@ var onRun = function(context) {
 				doc.showMessage("All icon sizes were created ⭐️");
 
 			}else{
-				doc.showMessage("Please select an artboard.");
+				doc.showMessage("Please select an 24dp symbol.");
 			}
 		}
 	}
