@@ -1,8 +1,8 @@
 {
     "name" : "DB UX DS 3",
     "identifier" : "dbuxds",
-    "version" : "1.0.5",
-    "appcast": "https://raw.githubusercontent.com/leape/DB-UX-Design-System/main/.appcast.xml?token=GHSAT0AAAAAAB35VCFEH6FKVNO3SY3IDA4EY5DGTIA",
+    "version" : "1.0.6",
+    "appcast": "https://raw.githubusercontent.com/leape/DB-UX-Design-System/main/.appcast.xml",
     "description" : "DB UX DS 3.0 (alpha)",
     "authorEmail" : "lea.perchermeier@deutschebahn.com",
     "author" : "Lea Perchermeier",
