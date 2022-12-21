@@ -1,4 +1,4 @@
-# DB UX Design System
+# DB UX Design System 3.0 Sketch Plugin
 
 ## Installation
 
