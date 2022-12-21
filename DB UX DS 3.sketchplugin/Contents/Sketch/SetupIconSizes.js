@@ -64,7 +64,7 @@ var onRun = function(context) {
 				doc.showMessage("All icon sizes were created ⭐️");
 
 			}else{
-				doc.showMessage("Please select an 24dp symbol.");
+				doc.showMessage("📍 Please select one or more 24dp icon symbols");
 			}
 		}
 	}
