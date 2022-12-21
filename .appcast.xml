@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <item>
-      <title>Version 1.0.7</title>
+      <title>Version 1.0.8</title>
       <description>
-        📍 Bugfix for Plugin Icon
+        Update messages
       </description>
-      <enclosure url="https://github.com/leape/DB-UX-Design-System--Icons/releases/download/1.0.7/DB-UX-DS-3.sketchplugin.zip" sparkle:version="1.0.7"/>
+      <enclosure url="https://github.com/leape/DB-UX-Design-System--Icons/releases/download/1.0.8/DB-UX-DS-3.sketchplugin.zip" sparkle:version="1.0.8"/>
     </item>
   </channel>
 </rss>
