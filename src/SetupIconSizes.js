@@ -13,7 +13,7 @@ var onRun = function(context) {
 
 	//make sure something is selected
 	if(selection.count() == 0){
-		doc.showMessage("Please select one or more 24dp icon symbols.");
+		doc.showMessage("📍 Please select one or more 24dp icon symbols");
 	}else{
 
 		//initial vertical alignment
