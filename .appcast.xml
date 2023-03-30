@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <item>
-      <title>Version 1.2.0</title>
+      <title>Version 1.2.2</title>
       <description>
         add sizes, fix formulas
       </description>
-      <enclosure url="https://github.com/leape/DB-UX-DS/releases/download/1.2.0/DB-UX-DS-3.sketchplugin.zip" sparkle:version="1.2.0"/>
+      <enclosure url="https://github.com/leape/DB-UX-DS/releases/download/1.2.2/DB-UX-DS-Core-v3.sketchplugin.zip" sparkle:version="1.2.2"/>
     </item>
   </channel>
 </rss>
