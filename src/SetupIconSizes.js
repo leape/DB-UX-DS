@@ -9,7 +9,7 @@ var onRun = function(context) {
 	var selection = context.selection;
 
 	//required iconsizes
-	var iconsize = [12, 14, 16, 20, 28, 32, 40, 48, 64];
+	var iconsize = [10, 12, 14, 16, 20, 28, 32, 40, 48, 64, 80, 96, 120];
 
 	//make sure something is selected
 	if(selection.count() == 0){
@@ -38,7 +38,8 @@ var onRun = function(context) {
 
 		            //set scale and border width
 		            var newSymbolScale = iconsize[j]/24;
-		            var newSymbolBorderWidth = iconsize[j]/16+0.5;
+		            var newSymbolBorderWidthStroke = iconsize[j]/15+0.38;
+		            var newSymbolBorderWidthCutout = iconsize[j]/12-0.2+(iconsize[j]*0.01);
 
 		            //scale new symbol
 					newSymbol.multiplyBy(newSymbolScale);
@@ -46,9 +47,16 @@ var onRun = function(context) {
 					//set new border thickness
 		            var newSymbolPaths = newSymbol.children();
 		            for(k=0; k < newSymbolPaths.length; k++){		            	
-		            	if(newSymbolPaths[k].name() == 'stroke') {
+		            	if(newSymbolPaths[k].name() == 'border-outline') {
 		            		var newSymbolBorder = newSymbolPaths[k].style().borders();
-							newSymbolBorder[0].thickness = newSymbolBorderWidth;
+							var newSymbolOutlineWidth = newSymbolBorderWidthStroke.toFixed(1);
+							newSymbolBorder[0].thickness = newSymbolOutlineWidth;
+      
+		            	}
+		            	if(newSymbolPaths[k].name() == 'border-cutout') {
+		            		var newSymbolBorder = newSymbolPaths[k].style().borders();
+		            		var newSymbolCutoutWith = newSymbolBorderWidthCutout.toFixed(1);
+							newSymbolBorder[0].thickness = newSymbolCutoutWith;
 		            	}
 		            }
 
@@ -58,7 +66,7 @@ var onRun = function(context) {
 		            allIcons.push(newSymbol);
 
 				}
-				allIcons.splice(4, 0, selectedIcon);
+				allIcons.splice(5, 0, selectedIcon);
 				iconAlignment(allIcons, symbolPosX, symbolPosY);
 
 				doc.showMessage("All icon sizes were created ⭐️");
