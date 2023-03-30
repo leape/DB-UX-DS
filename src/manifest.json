@@ -1,7 +1,7 @@
 {
   "name" : "DB UX DS Core 3.0",
   "identifier" : "dbuxds",
-  "version" : "1.2.0",
+  "version" : "1.2.2",
   "appcast": "https://raw.githubusercontent.com/leape/DB-UX-DS/main/.appcast.xml",
   "description" : "DB UX DS Core 3.0 (alpha)",
   "authorEmail" : "lea.perchermeier@deutschebahn.com",
