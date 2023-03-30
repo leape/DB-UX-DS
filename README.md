@@ -2,7 +2,7 @@
 
 ## Installation
 
-- [Download](../../releases/latest/download/DB-UX-DS-3.sketchplugin.zip) the latest release of the plugin
+- [Download](../../releases/latest/download/DB-UX-DS-Core-v3.sketchplugin.zip) the latest release of the plugin
 - Un-zip
 - Double-click on DB UX DS 3.sketchplugin
 
